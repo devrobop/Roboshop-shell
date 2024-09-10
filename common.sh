@@ -33,7 +33,7 @@ NODEJS() {
    PRINT Create App directory 
    mkdir /app  &>>$LOG_FILE
   
-   eccho Download App Content
+   echo Download App Content
    curl -o /tmp/$(component).zip https://roboshop-artifacts.s3.amazonaws.com/$(component)-v3.zip &>>$LOG_FILE
    
    PRINT enter the app file  
